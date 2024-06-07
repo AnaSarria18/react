@@ -1,82 +1,116 @@
-/* import React from 'react';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import About from './components/About';
-import Services from './components/Services';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-
-function App() {
-  return (
-    <div className="container">
-      <Header />
-      <Hero />
-      <About />
-      <Services />
-      <Contact />
-      <Footer />
-    </div>
-  );
-}
-
-export default App;
- */
-
-
-
-/* import React from 'react';
 
 function Header() {
+    return (
+        <React.Fragment>
+          
+          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid  color2">
+    <a class="navbar-brand" href="#">Inicio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Menú </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Notificaciones</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contacto</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Información</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+        </React.Fragment>
+    );
+}
+function Content() {
   return (
-    <header>
-      <h1>Travel Landing Page</h1>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+      <React.Fragment>
+        <br></br>
+        <article className="displayflex">
+        <div className="card" style={{ width: '18rem' }}>
+              <img src="https://images.unsplash.com/photo-1597198399495-ff26429c4ad9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className="card-img-top" alt="Imagen de ejemplo" />
+              <div className="card-body">
+                  <h5 className="card-title">Computadora</h5>
+                  <p className="card-text">Especificaciones</p>
+                  <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio facilis vel, iste delectus aliquam eius laudantium veritatis suscipit qui eos possimus voluptatibus ratione et eaque! Fugiat, dolor. Exercitationem, cum quibusdam!</p>
+                  
+              </div>
+          </div>
+
+          <div className="card" style={{ width: '18rem' }}>
+              <img src="https://images.unsplash.com/photo-1597198399495-ff26429c4ad9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className="card-img-top" alt="Imagen de ejemplo" />
+              <div className="card-body">
+                  <h5 className="card-title">Computadora</h5>
+                  <p className="card-text">Especificaciones</p>
+                  <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio facilis vel, iste delectus aliquam eius laudantium veritatis suscipit qui eos possimus voluptatibus ratione et eaque! Fugiat, dolor. Exercitationem, cum quibusdam!</p>
+                  
+              </div>
+          </div>
+
+          <div className="card" style={{ width: '18rem' }}>
+              <img src="https://images.unsplash.com/photo-1597198399495-ff26429c4ad9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className="card-img-top" alt="Imagen de ejemplo" />
+              <div className="card-body">
+                  <h5 className="card-title">Computadora</h5>
+                  <p className="card-text">Especificaciones</p>
+                  <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio facilis vel, iste delectus aliquam eius laudantium veritatis suscipit qui eos possimus voluptatibus ratione et eaque! Fugiat, dolor. Exercitationem, cum quibusdam!</p>
+                  
+              </div>
+          </div>
+
+          <div className="card" style={{ width: '18rem' }}>
+              <img src="https://images.unsplash.com/photo-1597198399495-ff26429c4ad9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className="card-img-top" alt="Imagen de ejemplo" />
+              <div className="card-body">
+                  <h5 className="card-title">Computadora</h5>
+                  <p className="card-text">Especificaciones</p>
+                  <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio facilis vel, iste delectus aliquam eius laudantium veritatis suscipit qui eos possimus voluptatibus ratione et eaque! Fugiat, dolor. Exercitationem, cum quibusdam!</p>
+                  
+              </div>
+          </div>
+
+          
+        </article>
+        <br></br>
+        
+      </React.Fragment>
   );
 }
 
-export default Header;
 
- */
-
-
-
-/* import React from 'react';
-
-function Hero() {
+function Footer() {
   return (
-    <section className="hero">
-      <div className="hero-content">
-        <h2>Explore the world with us</h2>
-        <p>Plan your dream vacation with our expert travel agents.</p>
-        <button>Start Planning</button>
-      </div>
-      <img src="hero-image.jpg" alt="Travel Image" />
-    </section>
+      <React.Fragment>
+        <br></br>
+          <ul class="nav justify-content-center">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="#">Contacto</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Instagram</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Términos</a>
+  </li>
+  
+</ul>
+<br></br>
+      </React.Fragment>
   );
 }
-
-export default Hero; */
-
-
-
-
-
-
-
-
-/* import React from 'react';
-
-function About() {
-  return (
-    <section className="about">
-      <h2>About Us</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed semper mauris at enim ullamcorper, id ullamcorper nisl posuere. Suspendisse potenti. Donec ut quam nec ante semper laoreet. Donec ullamcorper quam sit amet mauris bib
- */
+const container = document.getElementById('root');
+const root = ReactDOM.createRoot(container);
+    root.render(
+        <>
+        <Header/>
+        <Content/>
+        <Content/>
+        <Footer/>
+        </>
+    );
